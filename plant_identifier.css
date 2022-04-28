@@ -1,0 +1,60 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    
+}
+form.search_plant{
+
+    width:100%;
+    height:20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+form.search_plant form{
+    width: 50%;
+    height: 60px;
+
+}
+form.search_plant  h3{
+    display:block;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 40px;
+
+}
+#search_bar{
+    width:60%;
+    font-size: 20px;
+    margin-left: 15px;
+    border-style: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+#search_bar:focus{
+    border-style: none;
+    border-bottom: 2px solid green;
+    outline:none; /*Per rimuovere la selezione nativa di chrome*/
+}
+
+section.plant_preview{
+    display:none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box{
+    text-align: center;
+    position:relative;
+    width:500px;
+    margin:15px;
+    overflow: hidden;
+}
+.box img{
+    max-width: 100%;
+}
+
+h2{
+    color: green;
+}
+

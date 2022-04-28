@@ -1,0 +1,49 @@
+
+body{
+    font-family: 'Noticia Text', serif;
+}
+section {
+ 
+    display:flex;
+    justify-content: center;
+}
+section div.container{
+    width:80%;    
+}
+p{
+    font-size: 18px;
+    color:#607374;
+   
+}
+
+.title {
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 30px;
+}
+em{
+    font-weight: bold;
+    color: green;
+}
+
+
+
+
+div.preview{
+    display: flex;
+    justify-content: center;
+}
+
+div.box{
+    width: 150px;
+    height: 150px;
+    margin:10px;
+}
+
+div.box img{
+    max-width: 100%;
+}
+
+img:hover{
+    border:2px solid green;
+}

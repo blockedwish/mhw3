@@ -1,0 +1,199 @@
+﻿p, em , h1, h2, h3, h4, li, a{
+    font-family: 'Nunito', sans-serif;
+}
+em {
+ 
+    font-weight:900;
+}
+li {
+    color: #ac543c;
+    font-size: 1.3rem;
+}
+
+
+
+
+header .copertina {
+    display:inline-block;
+    height: 500px;
+    width:auto;
+    position:relative;
+    margin-bottom:0px;
+    overflow:hidden; /*Perche' l'immagine senza questo esce da destra un po' di pixel e noi lo tagliamo.*/
+}
+#copertina {
+    max-height:100%;
+}
+
+header {
+    text-align: center;
+}
+
+header .copertina .overlay_layer{
+    top:0%;
+    left: 0%;
+    position:absolute;
+    background-color: rgba(0,0,0, .3);
+    width:100%;
+    height:100%;
+}
+header .copertina div.title_box {
+    top:0px;
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width:100%;
+    height: 100%;
+}
+header div.user_icon{
+    position:relative;
+    top:-50px;
+    color:blue;
+}
+
+header div.user_icon img{
+    height:100px;
+    width:100px;
+}
+header div.user_icon p{
+    margin: 0;
+    
+}
+
+
+div.title_box .titolo_text {
+    font-size: 4rem;
+    color:white;
+    font-family: 'PT Sans Narrow', sans-serif;  /*preso da google font.*/
+    max-width:780px;
+}
+
+
+
+body > section{   /*Diretto discendente, utilizzato per riusare section successivamente senza questo stile*/
+    position: relative;
+    top:-50px;
+    /*border: 1px dashed green;*/
+    display: flex;
+    justify-content:center;
+    align-content:center;
+    
+}
+section .panel {
+    width: calc(66.67% + 40px);
+    /*border: 1px solid red;*/
+}
+div.spacesixty {
+    height: 60px;
+    /*border: 2px solid blue;*/
+}
+div.spacetwenty {
+    height: 20px;
+    /*border: 2px solid blue;*/
+}
+div.spaceonetwenty {
+    height: 120px;
+    /*border: 1px solid blue;*/
+}
+
+ol{
+    padding:0px;
+}
+li{
+    padding-left:40px;
+    position: relative;
+    margin:0px;
+    
+}
+.descrizione{
+    color: #607374;
+    font-size:1.5rem;
+    margin:0px;
+    text-align: justify; /*Anche se non lo abbiamo fatto a lezione, mi piace perche' rende il testo piu' ordinato.*/
+}
+li h3{
+    margin:0px;
+}
+li img {
+    display: block;
+    width: 100%;
+    margin-bottom: 0px;
+}
+li p.voto {
+    font-size: 1rem;
+    margin: 0px;
+    color: #c3a69c;
+}
+footer{
+    text-align: center;
+    background-color: #00000090;
+    color:white;
+    
+    
+}
+footer h4{
+    margin:2px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /*OTTIMIZZIAMO LO SPAZIO*/
+    div.spacesixty {
+        height: 30px;
+        /*border: 2px solid blue;*/
+    }
+
+    div.spacetwenty {
+        height: 10px;
+        /*border: 2px solid blue;*/
+    }
+
+    div.spaceonetwenty {
+        height: 45px;
+        /*border: 1px solid blue;*/
+    }
+
+    header .copertina {
+        height: 250px;
+        display:block;
+    }
+
+    header .copertina img{
+        position:relative;
+        left:-200px;
+    }
+    div.title_box .titolo_text {
+        font-size: 2rem;
+    }
+    li {
+        padding-left: 0px;
+    }
+    section .panel {
+        width: 80%
+        /*border: 1px solid red;*/
+    }
+    header div.user_icon img {
+        height: 70px;
+        width: 70px;
+    }
+    header div.user_icon {
+        top: -35px;
+
+    }
+    h3{
+        font-size: 1.3rem;
+    }
+    footer h4{
+        font-size: 0.8rem;
+    }
+
+    nav a{
+        font-size: 1.1rem;
+    }
+    nav div{
+        text-align: center;
+        width: 90%;
+    }
+
+}

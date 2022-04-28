@@ -1,0 +1,28 @@
+nav, nav div, nav a{
+    font-family:'Nunito', sans-serif;
+}
+nav{
+    display:flex;
+    background-color: #6bbe92;
+    justify-content:center;
+    margin-bottom:5px;
+
+}
+
+nav div{
+    width:66%;
+    padding:10px;
+   
+}
+nav a{
+    text-decoration: none; /*Necessario per togliere le decorazioni dello stylesheet del browser*/
+    color:white;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin:10px;
+    margin-right: 20px;
+}
+nav a:hover{
+    color: rgb(23, 27, 21);
+
+}
